@@ -14,7 +14,6 @@ body {
   box-shadow: 0 0 8px rgba(0,0,0,.1);
   display: flex;
   padding: 8px;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -55,19 +54,12 @@ ul {
 
 .links {
   display: flex;
+  gap: 16px;
+}
+
+.left-justify, .right-justify{
+  display: flex;
   flex-direction: row;
   gap: 16px;
   align-items: center;
-}
-
-.left-justify{
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-
-.right-justify{
-  display: flex;
-  flex-direction: row;
-  gap: 16px
 }
