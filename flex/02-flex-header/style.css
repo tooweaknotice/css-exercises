@@ -4,6 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* padding is better here than margin in .logo
+  because this ensures that if the logo is smaller 
+  than ul items, a padding is still maintained.
+  */
+  padding: 20px;
 }
 
 .logo {
@@ -12,8 +17,6 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
-  justify-content: center;
-  margin: 15px
 }
 
 ul {
@@ -24,7 +27,11 @@ ul {
   justify-content: space-around;
   margin: 0px;
   padding: 0px;
-  width: 220px;
+  gap: 8px;
+  /* originally used width here. gap will allow the
+  items to squish the gap if the window size 
+  shrinks, whereas width would concatenate the
+  content while maintaining the gap*/
 }
 
 a {
@@ -33,12 +40,4 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
-}
-
-.left-links {
-  justify-content: flex-start;
-}
-
-.right-links {
-  justify-content: flex-end;
 }
